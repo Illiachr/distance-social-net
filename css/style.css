@@ -50,7 +50,7 @@ body {
 }
 
 .search-input {    
-    width: 336px; /*TODO разобраться с адаптиной шиирной инпута*/
+    width: 336px; /*TODO разобраться с адаптивной шириной инпута*/
     padding: 5px 30px 5px 12px;
     outline: none;    
     border: 1px solid #d9d9d9;
