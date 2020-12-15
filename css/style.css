@@ -32,7 +32,6 @@
 }
 
 body {
-    /* font-family: SF Pro Display; */
     font-family: 'SFProDisplay', sans-serif;
     font-size: 14px;
     line-height: 22px;
@@ -49,8 +48,7 @@ body {
     align-items: center;
     justify-content: space-between;
 }
-.search {
-}
+
 .search-input {    
     width: 336px; /*TODO разобраться с адаптиной шиирной инпута*/
     padding: 5px 30px 5px 12px;
