@@ -1,27 +1,23 @@
 @font-face {
     font-family: 'SFProDisplay';
-    src: url('../fonts/SFProDisplay-Regular.woff2') format('woff2');
+    src: url('../fonts/SFProDisplay-Regular.woff2') format('woff2'),
+        url('../fonts/SFProDisplay-Regular.woff') format('woff');
     font-weight: 400;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'SFProDisplay';
-    src: url('../fonts/SFProDisplay-Regular.woff') format('woff');
-    font-weight: 400;
+    src: url('../fonts/SFProDisplay-Bold.woff2') format('woff2'),
+        url('../fonts/SFProDisplay-Bold.woff') format('woff');
+    font-weight: 700;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'SFProDisplay';
-    src: url('../fonts/SFProDisplay-Bold.woff2') format('woff2');
-    font-weight: 600;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'SFProDisplay';
-    src: url('../fonts/SFProDisplay-Bold.woff') format('woff');
+    src: url('../fonts/SFProDisplay-Semibold.woff') format('woff'),
+        url('../fonts/SFProDisplay-Semibold.woff2') format('woff2');
     font-weight: 600;
     font-style: normal;
 }
@@ -34,9 +30,16 @@
 body {
     font-family: 'SFProDisplay', sans-serif;
     font-size: 14px;
+    font-weight: 400;
     line-height: 22px;
+    background: #e5e5e5;
 }
 
+h4 {
+    margin: 0;
+}
+
+/* SECTION header */
 .header {
     background: #0050B3;
     padding: 8px 0;
@@ -50,7 +53,7 @@ body {
 }
 
 .search-input {    
-    width: 336px; /*TODO разобраться с адаптивной шириной инпута*/
+    width: 336px; /*TODO разобраться с шириной инпута max-with*/
     padding: 5px 30px 5px 12px;
     outline: none;    
     border: 1px solid #d9d9d9;
@@ -154,3 +157,146 @@ body {
 .dropdown-icon:hover {
     fill: #ffffff;
 }
+/* !SECTION header */
+/* SECTION menu-sidebar */
+
+.container {
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.menu-sidebar {
+    max-width: 200px;
+    margin-top: 16px;
+    margin-right: 18px;
+    flex-grow: 1;
+}
+
+.user {
+    padding: 4px 8px;
+}
+
+.menu-sidebar .user-avatar {
+    width: 24px;
+    height: 24px;
+}
+
+.menu-sidebar .user-name {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+
+    color: #262626;
+}
+.nav-group {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 12px;
+    margin-bottom: 24px;
+}
+.nav-link {
+    padding: 4px 8px;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #595959;
+}
+
+.nav-link.active {
+    background: #ffffff;
+    border-radius: 4px;
+    font-weight: 600;
+    color: #262626;
+}
+
+.nav-text {
+    margin-left: 8px;
+}
+/* !SECTION */
+
+/* SECTION .main-feed */
+
+.main-feed {
+    max-width: 588px;
+    margin-top: 16px;
+    flex-grow: 1;
+}
+
+.create-post {
+    background: #ffffff;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;        
+    padding-bottom: 16px;
+    overflow: hidden;
+}
+
+.create-post--header {
+    color: #595959;
+    padding: 16px 9px;
+    background: #F5F5F5;
+    border-bottom:1px solid #d9d9d9;
+}
+
+
+.create-post--input {
+    display: flex;
+    align-items: start;
+    padding: 16px 16px 24px 16px;
+}
+
+.create-post--input .user-avatar {
+    width: 40px;
+    height: 40px;
+    margin-right: 16px;
+}
+
+.create-post--text {
+    font-size: 16px;
+    line-height: 24px;
+    color: #8c8c8c;
+    padding-top: 8px;
+    outline: none;
+    width: 100%;
+}
+
+.create-post--footer {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 0 16px 16px 16px;
+}
+
+.create-post--footer::before {
+    content: '';
+    height: 1px;
+    width: 100%;
+    background: #e8e8e8;
+    margin-bottom: 16px;
+}
+
+.create-post--btn {
+    display: flex;
+    align-items: center;
+    width: 134px;
+    height: 40px;
+    border: none;
+    outline: none;
+    background: #F5F5F5;
+    border-radius: 48px;
+    padding: 8px 12px;
+    margin-right: 8px;
+}
+
+.create-post--btn:last-child {
+    width: 48px;
+}
+
+.btn-text {
+    margin-left: 8px;
+    color: #595959;
+    font-weight: 600;
+}
+
+/* !SECTION */
