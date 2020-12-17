@@ -162,6 +162,7 @@ h4 {
 
 .container {
     display: flex;
+    justify-content: space-between;
     max-width: 1200px;
     margin: 0 auto;
 }
@@ -169,7 +170,6 @@ h4 {
 .menu-sidebar {
     max-width: 200px;
     margin-top: 16px;
-    margin-right: 18px;
     flex-grow: 1;
 }
 
@@ -244,6 +244,7 @@ h4 {
     max-width: 588px;
     margin-top: 16px;
     flex-grow: 1;
+
 }
 
 .create-post {
@@ -454,10 +455,117 @@ h4 {
 
 /* !SECTION */
 
-/* SECTION stories */
+/* SECTION rigth-sidebar */
+
+.rigth-sidebar {
+    max-width: 384px;
+    margin-top: 16px;
+    flex-grow: 1;
+}
+
+.stories {
+    padding: 16px 16px 16px 24px;
+    background: #FFFFFF;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.15);
+    border-radius: 4px
+}
+
+.story-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 16px;
+}
+
+.story-button {
+    display: flex;    
+}
+
+.stories-icon {
+    margin-right: 4px;
+}
+
+.story-btn-link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #0050b3;
+}
+
+.story-btn-text {
+    
+}
+
+.story-btn-link:first-child:after {
+    display: inline-block;
+    content: '';
+    height: 4px;
+    width: 4px;
+    background-color: #bfbfbf;
+    border-radius: 50%;
+    margin-right: 8px;
+    margin-left: 8px;
+    vertical-align: middle;
+}
+
+.stories .user-avatar {
+    width: 48px;
+    height: 48px;
+    margin-right: 12px;
+}
 
 .stories-icon {
     fill : #0050b3;
+}
+
+.story-item, 
+.story-item-add {
+    display: flex;
+    align-items: center;
+    margin-bottom: 16px;
+    text-decoration: none;
+}
+
+.story-add-btn {
+    width: 48px;
+    height: 48px;
+    margin-right: 12px;
+    flex-shrink: 0;
+    background: #f5f5f5;
+    border: 1px solid #d9d9d9;
+    border-radius: 50%;
+
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: #1890ff;
+
+}
+
+.story-item-text {
+    display: flex;
+    flex-direction: column;    
+}
+
+/* .story-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 16px;
+    text-decoration: none;
+} */
+
+.story-title {
+    font-weight: 600;
+    color:#0050b3;
+}
+
+.story-text {
+    width: 100%;
+    word-wrap: break-word;
+    color: #8c8c8c;
 }
 
 /* !SECTION */
